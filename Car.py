@@ -12,3 +12,19 @@ print("\033[1;3mMy name is \033[;45;1;3mLoraine\033[0m")
 your_name = input("\033[1;3mWhat is your name?\033[0m")
 print("\033[;1;3mI'm glad that you're here!\033[;34;1;3m" + your_name + "\033[0m \033[;1;3m, sit back and learn with me!\033[0m")
 
+class Car:
+    def __init__(self, year_model, make):
+        self.__year_model = year_model
+        self.__make = make
+        self.__speed = 0
+
+    def accelerate(self):
+        self.__speed += 5
+
+    def brake(self):
+        self.__speed -= 5
+
+    def get_speed(self):
+        return self.__speed
+
+
