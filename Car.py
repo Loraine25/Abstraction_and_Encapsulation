@@ -27,4 +27,7 @@ class Car:
     def get_speed(self):
         return self.__speed
 
+# Create a Car object
+car = Car(2022, "Tesla")
+
 
