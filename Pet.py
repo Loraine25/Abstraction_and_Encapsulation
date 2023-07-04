@@ -44,3 +44,13 @@ name = input("Enter pet's name: ")
 animal_type = input("Enter pet's animal type: ")
 age = input("Enter pet's age: ")
 
+# Set the pet's attributes
+pet.set_name(name)
+pet.set_animal_type(animal_type)
+pet.set_age(age)
+
+# Display pet's details
+print("Pet's details:")
+print("Name:", pet.get_name())
+print("Animal type:", pet.get_animal_type())
+print("Age:", pet.get_age())
