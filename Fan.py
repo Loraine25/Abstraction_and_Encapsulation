@@ -62,3 +62,72 @@ class Fan:
         # Set the color of the fan.
         self.__color = str(color)
 
+class Fan:
+    # Three constants named SLOW, MEDIUM, and FAST with the values 1, 2, and 3.
+    SLOW = 1
+    MEDIUM = 2
+    FAST = 3
+
+    def __init__(self, speed=SLOW, on=False, radius=5, color="blue"):
+        # Private int data field named speed that specifies the speed of the fan.
+        self.__speed = int(speed)
+        # Private bool data field named on that specifies whether the fan is on.
+        self.__on = bool(on)
+        # Private float data field named radius that specifies the radius of the fan.
+        self.__radius = float(radius)
+        # Private string data field named color that specifies the color of the fan.
+        self.__color = str(color)
+
+    # Getter methods for all four data fields.
+    def get_speed(self):
+        # Get the fan speed.
+        return self.__speed
+    
+    def is_on(self):
+        # Check if the fan is on.
+        return self.__on
+    
+    def get_radius(self):
+        # Get the radius of the fan.
+        return self.__radius
+    
+    def get_color(self):
+        # Get the color of the fan.
+        return self.__color
+    
+    # Setter methods for all four data fields.
+    def set_speed(self, speed):
+        # Set the fan speed.
+        self.__speed = int(speed)
+
+    def set_on(self, on):
+        # Set whether the fan is on or off.
+        self.__on = bool(on)
+
+    def set_radius(self, radius):
+        # Set the radius of the fan.
+        self.__radius = float(radius)
+
+    def set_color(self, color):
+        # Set the color of the fan.
+        self.__color = str(color)
+
+
+class TestFan:
+    def __init__(self):
+        fan1 = Fan(Fan.FAST, True, 10, "yellow")
+        fan2 = Fan(Fan.MEDIUM, False, 5, "blue")
+
+        self.display_fan_properties(fan1)
+        self.display_fan_properties(fan2)
+
+    def display_fan_properties(self, fan):
+        print("Fan Speed:", fan.get_speed())
+        print("Fan On:", fan.is_on())
+        print("Fan Radius:", fan.get_radius())
+        print("Fan Color:", fan.get_color())
+        print()
+
+
+# Create an instance of the TestFan class to run the test program
+TestFan()
