@@ -30,4 +30,14 @@ class Car:
 # Create a Car object
 car = Car(2022, "Tesla")
 
+# Accelerate and display current speed
+print("Accelerating:")
+for _ in range(5):
+    car.accelerate()
+    print("Current speed:", car.get_speed())
 
+# Brake and display current speed
+print("Braking:")
+for _ in range(5):
+    car.brake()
+    print("Current speed:", car.get_speed())
